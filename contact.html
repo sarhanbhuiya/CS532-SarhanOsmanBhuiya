@@ -1,0 +1,109 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to an external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add any additional meta tags or link to external stylesheets if needed -->
+
+    <!-- Title of the webpage -->
+    <title>SARHAN OSMAN BHUIYA - Contact</title>
+
+    <!-- Internal styles specific to this page -->
+    <style>
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for mobile navigation menu */
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Center and add margin to the footer text on mobile */
+            .footer-left p {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            /* Make the Dark Mode Toggle button full width on mobile */
+            #toggle-theme {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="hobbies.html">HOBBIES</a></li>
+                <li><a href="travel.html">TRAVEL</a></li>
+                <li><a href="contact.html">GET IN TOUCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+        <!-- Contact Form -->
+        <div class="contact-container">
+            <h2>CONTACT ME</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button class="contactbutton" type="submit">Send Message</button>
+            </form>
+
+            <!-- Contact Information -->
+            <h2>CONTACT INFORMATION</h2>
+            <p>Name: Sarhan Osman Bhuiya</p>
+            <p>Address: 1234 University Park, Las Cruces, NM, 88001</p>
+            <p>Phone: 1-567-3456</p>
+            <p>Email: <a href="mailto:sarhan@nmsu.edu.com">sarhan@nmsu.edu.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content goes here -->
+        <div class="footer-left">
+            <p>&copy; 2024 Sarhan Osman Bhuiya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Button (optional) -->
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <!-- JavaScript for Dark Mode Toggle (place at the end of the body) -->
+    <script>
+        document.getElementById("toggle-theme").onclick = function () {
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+</body>
+
+</html>

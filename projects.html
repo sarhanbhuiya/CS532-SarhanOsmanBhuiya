@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to an external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Title of the webpage -->
+    <title>SARHAN OSMAN BHUIYA - Projects</title>
+
+    <!-- Internal styles specific to this page -->
+    <style>
+        /* General styling for the entire body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Styling for the main content container */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styling for individual project sections */
+        .project-section {
+            background-color: #436C74;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Justify text within project sections */
+        .project-section p {
+            text-align: justify;
+        }
+
+        /* Hover effect for project sections */
+        .project-section:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for project section headings */
+        .project-section h3 {
+            color: #fff;
+        }
+
+        /* Margin for project section paragraphs */
+        .project-section p {
+            margin-bottom: 15px;
+        }
+
+        /* Styling for project links */
+        .project-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #334C59;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hover effect for project links */
+        .project-link:hover {
+            background-color: #334C59;
+        }
+
+        /* Styling for the footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for mobile navigation menu */
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Make project images full width on mobile */
+            .project-section img {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 15px;
+            }
+
+            /* Ensure text in project sections is justified on mobile */
+            .project-section p {
+                text-align: justify;
+            }
+
+            /* Center and add margin to the footer text on mobile */
+            .footer-left p {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            /* Make the Dark Mode Toggle button full width on mobile */
+            #toggle-theme {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with navigation menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="hobbies.html">HOBBIES</a></li>
+                <li><a href="travel.html">TRAVEL</a></li>
+                <li><a href="contact.html">GET IN TOUCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <section class="content">
+        <div class="contact-container">
+            <h2>MY PROJECTS</h2>
+        </div>
+
+        <!-- Project Section 1 -->
+        <div class="project-section">
+            <h3>Pet Rock Sitters</h3>
+            <!-- Image for Project 1 -->
+            <img src="img/project1.png" alt="Project 1 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+            <!-- Project description -->
+            <p>
+                Project Showcase: PetrockSitters.com
+                I am proud to present PetrockSitters.com, a culmination of my dedication to excellence in the realm of web development. This website, meticulously crafted as part of the coursework in Human-Centered Computing, stands as a testament to my commitment to merging technological innovation with a genuine passion for animal welfare.
+            </p>
+            <!-- Link to read more about the project -->
+            <a href="https://petrocksitters.com/" class="project-link" hr>Read More</a>
+        </div>
+<br>
+        <!-- Project Section 2 -->
+        <div class="project-section">
+            <h3>Hospital Management System</h3>
+            <!-- Image for Project 2 -->
+            <img src="img/project2.png" alt="Project 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+            <!-- Project description -->
+            <p>
+                There will be 8-10 pages designed with HTML, CSS and BOOTSTRAP. Database will be created with SQL concept. Each page will be connected to database using PHP and There will be both inputs and outputs in each page. Features-LOG IN ACCESS,NAVIGATION BAR,NURSE, PRESCRIPTION, WARD, BED, PATIENT, MEDICINE, DOCTOR, SUPERVISOR,RECEIPT etc.
+            </p>
+            <!-- Link to read more about the project -->
+            <a href="https://github.com/SarhanOsmanBhuiya/Group-H-Hospital-Management-System-" class="project-link">Read More</a>
+        </div>
+<br>
+        <!-- Project Section 3 -->
+        <div class="project-section">
+            <h3>Brilliant Retail SMS</h3>
+            <!-- Image for Project 3 -->
+            <img src="img/project3.png" alt="Project 3 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+            <!-- Project description -->
+            <p>
+                I proudly present the Brilliant Retail SMS website—a project I personally designed and implemented. This platform, crafted with Bootstrap, HTML, CSS, and JavaScript, offers a user-friendly interface for seamless bulk SMS transactions. Discover the convergence of cutting-edge technology and my expertise in this efficient and secure solution.
+            </p>
+            <!-- Link to read more about the project -->
+            <a href="https://github.com/sarhanbhuiya/Brilliant-Retail-SMS" class="project-link">Read More</a>
+        </div>
+
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2024 Sarhan Osman Bhuiya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Button (optional) -->
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <!-- JavaScript for Dark Mode Toggle (place at the end of the body) -->
+    <script>
+        document.getElementById("toggle-theme").onclick = function () {
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+</body>
+
+</html>

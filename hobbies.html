@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to an external stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Title of the webpage -->
+    <title>SARHAN OSMAN BHUIYA - Hobbies</title>
+
+    <!-- Internal styles specific to this page -->
+    <style>
+        /* Additional Styles for Slider */
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .slider {
+            white-space: nowrap;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .hobby-image {
+            width: 70%;
+            height: auto;
+        }
+
+        /* Additional Styles for Hobby Sections */
+        .hobby-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #416971;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .hobby-section:hover {
+            transform: scale(1.05);
+        }
+
+        .youtube-trailer {
+            width: 80%;
+            height: 315px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for mobile navigation menu */
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            header nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Make hobby images full width on mobile */
+            .hobby-image {
+                width: 100%;
+            }
+
+            /* Make YouTube trailers responsive on mobile */
+            .youtube-trailer {
+                width: 100%;
+                height: 200px;
+            }
+
+            /* Center and add margin to the footer text on mobile */
+            .footer-left p {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            /* Make the Dark Mode Toggle button full width on mobile */
+            #toggle-theme {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with navigation menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="hobbies.html">HOBBIES</a></li>
+                <li><a href="travel.html">TRAVEL</a></li>
+                <li><a href="contact.html">GET IN TOUCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <section class="content">
+        <div class="contact-container">
+            <h2>MY HOBBIES</h2>
+        </div>
+
+        <!-- Car Enthusiast Section -->
+        <div class="hobby-section">
+            <h3>Driving My Car</h3>
+            <!-- Image for Car Enthusiast Hobby -->
+            <img src="img/car0.jpg" alt="Car Enthusiast Hobby" class="hobby-image" width="30%">
+            <!-- Description for Car Enthusiast Hobby -->
+            <p>I absolutely love cruising in my self-built car – a project that took some time, but I nailed it step by step. Traveling the world on four wheels is like my ultimate adventure, and my trusty car has been rolling with me for a solid 23 years now. Just hand me any car, and I'll happily drive for miles.</p>
+        </div>
+        <br>
+        <!-- Movie Enthusiast Section -->
+        <div class="hobby-section">
+            <h3>Movie Buff</h3>
+            <!-- Embed YouTube video using iframe -->
+            <iframe class="youtube-trailer" src="https://www.youtube.com/embed/0jNvJU52LvU" frameborder="0" allowfullscreen></iframe>
+            <!-- Description for Movie Buff Hobby -->
+            <p>I enjoy watching movies in my free time. Here's a trailer for one of my favorites.</p>
+        </div>
+        <br>
+        <!-- Additional Movie Enthusiast Section with a different trailer -->
+        <div class="hobby-section">
+            <h3>Movie Buff</h3>
+            <!-- Embed a different YouTube video using iframe -->
+            <iframe class="youtube-trailer" src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0" allowfullscreen></iframe>
+            <!-- Description for Movie Buff Hobby -->
+            <p>Enjoy this thrilling movie trailer!</p>
+        </div>
+
+        <!-- Add more hobby sections as needed -->
+
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy; 2024 Sarhan Osman Bhuiya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Button (optional) -->
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <!-- JavaScript for Dark Mode Toggle (place at the end of the body) -->
+    <script>
+        document.getElementById("toggle-theme").onclick = function () {
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+</body>
+
+</html>

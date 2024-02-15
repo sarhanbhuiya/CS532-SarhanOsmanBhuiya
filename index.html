@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add any additional meta tags or link to external stylesheets if needed -->
+    <title>SARHAN OSMAN BHUIYA</title>
+    <style>
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for mobile navigation menu */
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Make the profile image full width on mobile */
+            .bio-container img {
+                width: 100%;
+            }
+
+            /* Ensure text in the bio is justified on mobile */
+            .bio-container p {
+                text-align: justify;
+            }
+            
+            /* Center and add margin to the footer text on mobile */
+            .footer-left p {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            /* Make the Dark Mode Toggle button full width on mobile */
+            #toggle-theme {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="hobbies.html">HOBBIES</a></li>
+                <li><a href="travel.html">TRAVEL</a></li>
+                <li><a href="contact.html">GET IN TOUCH</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+        <!-- Picture and Short Bio -->
+        <div class="bio-container">
+            <!-- Profile Picture -->
+            <img src="img/pic.jpg" alt="Picture of Sarhan">
+
+            <!-- Bio Text -->
+            <div class="biohead">SARHAN OSMAN BHUIYA</div>
+            <p>
+                Hey folks, I'm Sarhan, a tech enthusiast originally from Bangladesh and currently navigating the challenges of being a Computer Science Master's student at New Mexico State University. My journey kicked off with bagging a Bachelor's in Computer Science and Engineering – a solid foundation for the rollercoaster ride that followed. Before diving into the academic sea, I flexed my tech muscles as a System Engineer at a telecom giant back in Bangladesh. There, I dived deep into fault diagnosis, core network management, and even threw in some international collaboration, contributing my fair share to website development.
+                <br><br>
+                Fast forward to today, and I'm not just about coding and acing my master's. I'm all about shaping the digital future. Right now, I'm juggling the role of a hardworking Graduate Assistant at NMSU, stationed in the Office of Equity, Inclusion, and Diversity (EID). My toolkit includes HTML, CSS, CSS Grids, JavaScript, ReactJS, and Bootstrap. Whether it's crafting sleek websites for EID and its programs or coordinating initiatives, I'm the guy making sure everything runs like a well-oiled machine.
+                <br><br>
+                Outside the digital bubble, you'll find me feeding my wanderlust ✈️, exploring different cuisines from around the globe 🌍🍲. Oh, and solving Rubik's cubes is my kind of therapeutic puzzle session – a burst of colors and patterns as each cube falls into place. 🧩 And did I mention? I'm a car enthusiast, always up for hitting the road and exploring the world on four wheels. 🚗
+                <br><br>
+                Cheers,
+                <br>
+                Sarhan Osman Bhuiya
+                <br>
+                Graduate Assistant, Office of Equity, Inclusion, and Diversity
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content goes here -->
+        <div class="footer-left">
+            <p>&copy; 2024 Sarhan Osman Bhuiya. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Button (optional) -->
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <!-- JavaScript for Dark Mode Toggle (place at the end of the body) -->
+    <script>
+        document.getElementById("toggle-theme").onclick = function () {
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+        };
+    </script>
+</body>
+</html>
